@@ -1,0 +1,158 @@
+*Main
+(pr)	durch	- through
+(pr)	durch	- by
+(pr)	bei		- at
+(sn)	etwas	- something
+(ac)	dort	- there
+(pr)	dafür	- for that
+(pr)	genauch	- exactly
+(pr)	diese	- this
+
+
+*Die Umzugscheckliste
+(sn)	sonderurlaub			- special leave
+(sn)	urlaub					- vacation
+(vb)	beantragen				- apply for
+(sn)	helfer					- helper
+(sn)	freundeskreis			- friend circle
+(pl)	familienmitglieder		- family members
+(vb)	umzug					- move
+(sn)	checkliste				- checklist
+(vb)	anschaffen				- purchase
+(vb)	umzugskartons			- moving boxes
+(vb)	ausmisten				- clean out
+(sn)	renovierungsarbeiten	- renoviation work
+(vb)	beauftragen				- give an order
+(pl)	verträge				- contacts
+(vb)	kündigen				- quit
+(vb)	kündigen				- cancel
+(vb)	ummelden				- re-register
+(pr)	vielleicht				- perhaps
+(pl)	anschlüsse				- connections
+(pl)	daueraufträge			- standing orders
+(vb)	beenden					- end
+(sn)	umzugstag 				- moving date
+(vb)	vorbereiten				- prepare
+(sn)	meldezettel				- registration form
+(sn)	adressänderung			- change of address
+(vb)	bekanntgeben			- announce
+(sn)	wohnsitz				- residence
+(vb)	nachsendeauftrag		- forwarding order
+(sn)	meldebestätigung		- confirmation of registration
+(sn)	bescheid				- notice
+(sn)	auftrag					- order
+(vb)	geben					- give
+(vb)	einrichten				- set up
+(sn)	meldung					- report
+(sn)	nachforschungsauftrag	- research assignment
+(sn)	qualitat				- quality
+(ad)	egal					- doesn't matter
+(vb)	mitbringen				- bring along
+(pl)	möbel					- furniture
+(vb)	abbauen					- tear down
+(vb)	bauen					- build
+(sn)	schraubenzieher			- screwdrive
+(ac)	welche					- which
+(sn)	dübel					- dowel
+(sn)	pinsel					- paint brush
+(pl)	leiter					- ladder
+(sn)	hammer					- hammer
+(pl)	farbe					- color
+(sn)	bohrmaschine			- drill
+(vb)	bohr					- drill
+(sn)	wandfarbe				- wall paint
+(sn)	wand					- wall
+(sn)	nagel					- nail
+(sn)	schraube				- screw
+(pl)	vorhang					- curtain
+(vb)	aufhängen				- hanging
+#        10 symbols are minimum, and less are ignored
+#        or use comments in single line
+
+
+*Probleme in der Arbeit
+(pl)	vorlesungen						- lectures
+(sn)	einstieg						- entry
+(vb)	gemacht							- made
+(pl)	kollegen						- colleagues
+(ad)	schlechte						- bad
+(vb)	konzentrationsschwierigkeiten	- difficulty concentrating
+(vb)	kritisiert						- criticized
+(vb)	werden							- become
+(sn)	finanzielle						- financional
+(sn)	pleite sein						- to be broke
+(ad)	geringe							- low
+(sn)	wertschätzung					- appreciation
+(sn)	zeitdruck						- time pressure
+(ad)	psychiche						- psychological
+(ad)	genießen						- enjoy
+(sn)	selbstwert						- self worth
+(vb)	kennen							- know
+(sn)	überforderung					- excessive demands
+(sn)	krankheit						- illness
+(sn)	arbeitslosigkeit				- unemployment
+(vb)	führen							- lead
+(vb)	verursachen						- cause
+(vb)	teilen							- share
+(ad)	beschäftigten					- employed
+(av)	betroffen						- affected
+(av)	besonders						- particulary
+(ad)	häufigsten						- most common
+(sn)	gefährdung						- danger
+(vb)	gehört							- heard
+(vb)	vermeiden						- avoid
+(vb)	bemühen							- make an efford
+#	zu + infinitiv -> to do sth
+(sn)	hauptsatz						- main clause
+(sn)	ohrstöpsel						- ear plug
+
+*Cloth material
+(sn)	leder		- leather
+(sn)	leinen		- canvas
+(sn)	leinen		- cloth
+(sn)	baumwolle	- cotton
+(sn)	seide		- silk
+
+*Farbige
+(av)	farbige			- colored
+(ad)	weißem			- white
+(ad)	silber-schwarze	- silver-black
+(ad)	hellblau		- light blue
+(ad)	dunkelgrün		- dark green
+(ad)	grau			- gray
+(ad)	braune			- tan
+
+*Was tragt die Person
+(sn)	muster			- pattern
+(vb)	trägt			- carries
+(av)	gepunktet		- dotted
+(av)	geblümt			- floral
+(av)	kariert			- checkered
+(sn)	eigenschaft		- characteristic
+(ad)	lang			- long
+(ad)	eng				- closely
+(av)	kurzärmelig		- short sleeved
+(ad)	enge			- tight
+(ad)	löchrige		- holey
+(av)	langärmelige	- long sleeved
+(sn)	jacke			- jacket
+(ad)	weit			- far
+(ad)	weit			- wide
+(av)	sportliche		- sporty
+(pl)	stoffschuhe		- fabric shoes
+(av)	klassesche		- classy
+(ad)	elegante		- elegant
+(sn)	armbanduhr		- wristwatch
+(ad)	edle			- noble
+(vb)	passende		- matching
+(ad)	moderne			- modern
+(pl)	sonnenbrille	- sunglasses
+(ad)	zerrissene		- torn
+(sn)	anzug			- men's suit
+(sn)	hemd			- shirt
+(ad)	grauen			- dawn
+(pl)	anzughose		- dress pants
+(sn)	sakko			- jacket
+(pl)	socken			- socks
+(sn)	armband			- brecelet
+(sn)	tüchlein		- handkerchief
