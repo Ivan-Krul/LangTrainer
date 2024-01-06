@@ -1,13 +1,28 @@
 *Main
-(pr)	durch	- through
-(pr)	durch	- by
-(pr)	bei		- at
-(sn)	etwas	- something
-(ac)	dort	- there
-(pr)	dafür	- for that
-(pr)	genauch	- exactly
-(pr)	diese	- this
+(pr)	durch		- through
+(pr)	durch		- by
+(pr)	bei			- at
+(sn)	etwas		- something
+(ac)	dort		- there
+(pr)	dafür		- for that
+(pr)	genauch		- exactly
+(pr)	diese		- this
+(av)	schon		- already
+(vb)	glaube		- believe
+(pr)	überhaupt	- at all
+(av)	dabei		- included
+(pr)	her			- here
+(pr)	mich		- me
+(pr)	dich		- you
+(pr)	sich		- itself
+(pr)	uns			- us
 
+*Gross
+(ad)	mitelle	- medium
+(ad)	lang			- long
+(ad)	enge			- tight
+(ad)	weit			- far
+(ad)	weit			- wide
 
 *Die Umzugscheckliste
 (sn)	sonderurlaub			- special leave
@@ -31,7 +46,7 @@
 (pl)	anschlüsse				- connections
 (pl)	daueraufträge			- standing orders
 (vb)	beenden					- end
-(sn)	umzugstag 				- moving date
+(sn)	umzugstag				- moving date
 (vb)	vorbereiten				- prepare
 (sn)	meldezettel				- registration form
 (sn)	adressänderung			- change of address
@@ -115,12 +130,16 @@
 
 *Farbige
 (av)	farbige			- colored
+(ad)	bunten			- colorful
 (ad)	weißem			- white
 (ad)	silber-schwarze	- silver-black
 (ad)	hellblau		- light blue
 (ad)	dunkelgrün		- dark green
 (ad)	grau			- gray
 (ad)	braune			- tan
+(ad)	gelb			- yellow
+(ad)	beige			- beige
+(ad)	dunkel			- dark
 
 *Was tragt die Person
 (sn)	muster			- pattern
@@ -129,15 +148,11 @@
 (av)	geblümt			- floral
 (av)	kariert			- checkered
 (sn)	eigenschaft		- characteristic
-(ad)	lang			- long
 (ad)	eng				- closely
 (av)	kurzärmelig		- short sleeved
-(ad)	enge			- tight
 (ad)	löchrige		- holey
 (av)	langärmelige	- long sleeved
 (sn)	jacke			- jacket
-(ad)	weit			- far
-(ad)	weit			- wide
 (av)	sportliche		- sporty
 (pl)	stoffschuhe		- fabric shoes
 (av)	klassesche		- classy
@@ -156,3 +171,169 @@
 (pl)	socken			- socks
 (sn)	armband			- brecelet
 (sn)	tüchlein		- handkerchief
+
+*schaden im haushalt
+(sn)	schäden					- damage
+(sn)	haushalt				- household
+(sn)	mieter					- renter
+(sn)	vermieter				- landlord
+(vb)	zahlen					- pay
+(sn)	dach					- roof
+(sn)	sturm					- storm
+(pl)	duschkabinen			- shower cubickes
+(sn)	glas					- glass
+(ad)	bruch					- broken
+(sn)	defekte					- defective
+(sn)	bildschirm				- screen
+(sn)	zentralheizung			- central heating
+(pl)	stromleitungen			- power lines
+(sn)	außerhalb				- outside
+(sn)	wasser					- water
+(sn)	stiegenhaus				- staircase
+(sn)	einbruch				- burglary
+(sn)	fassade					- facade
+(sn)	hauseingangstür schloss	- house enterance door lock
+# komposita
+# haufigkeit 30% -> -s -es -e.
+# for plurals -> -n -en -er
+#
+# regel -> zusammenensetzungen mit wortern -> -tum -ling -ion -tat -heit -keit -schaft -sicht -ung -ut
+# zweck -> verbindungslaut -> aussprache
+
+*Wie Konnen Sie die Person begrussen?
+(sn)	onkel			- uncle
+(sn)	tante			- aunt
+(sb)	verkauferin		- saleswoman
+(sn)	bekannten		- known
+(vb)	wohne			- live
+(ad)	allein			- alone
+(vb)	kennenzulernen	- to get to know
+(sn)	stock			- floor
+(sn)	gluck			- happiness
+(sn)	kinderwagen		- stroller
+(sn)	lärm			- noise
+(vb)	beschwere		- complain
+(pl)	fragen			- questions
+(sn)	geburtstag		- birthday
+(pl)	mull			- garbage
+(sn)	kellertur		- cellar door
+(vb)	räumen			- clear
+(vb)	liegen			- lay
+
+
+*Wohnen
+(sn)	wohnen					- residence
+(sn)	mietwohnung				- rental apartment
+(sn)	blumentopf				- plant pot
+(sn)	boden					- floor
+(sn)	stuhl					- chair
+(sn)	ziegelwand				- brick wall
+(sn)	zimmerdecke				- ceiling
+(sn)	decke					- ceiling
+(sn)	wanduhr					- wall clock
+(sn)	bücherregal				- bookshelf
+(sn)	teppich					- carpet
+(sn)	luster					- chandelier
+(sn)	couch					- couch
+(pl)	zierkissen				- decorative pillows
+(sn)	kommode					- dresser
+(sn)	schatten				- shadow
+(sn)	beispiel				- example
+(pl)	fliesen					- tiles
+(sn)	handtuch				- hand towel
+(sn)	handtuchhalter			- towel holder
+(sn)	badspiegel				- bathroom mirror
+(sn)	toilettenbrille			- toilet seat
+(sn)	toilettenbrille deckel	- toilet seat lid
+(sn)	badewanne				- bathtub
+(sn)	badbrause				- bathroom shower
+(sn)	duschkopf				- shower head
+(sn)	wasserhahn				- water tap
+(sn)	waschbecken				- bathroom sink
+(sn)	waschbeckenunterschrank	- sink cabinet
+(sn)	zimmer					- room
+(vb)	gefällen				- liked
+(av)	geräumt					- cleared
+(sn)	schicht					- layer
+(sn)	polster					- pad
+(pl)	vorhänge				- curtains
+(pl)	gardinen				- curtains
+(sn)	spiegelschrank			- mirror cabinet
+(sn)	nachttisch				- bedside table
+(sn)	klimaanlage				- air conditioner
+(sn)	parkett					- parquet
+(sn)	küchenzeile				- kitchenette
+(sn)	hängeschrank			- wall cupboard
+(sn)	schublade				- drawer
+(sn)	schneidebrett			- cutting board
+(sn)	wasserhahn				- water tap
+(sn)	kühlschrank				- refigerator
+(sn)	kühlschrank				- fridge
+(sn)	backofen				- oven
+(sn)	herdplatte				- stovertop
+(sn)	wasserkocher			- kettle
+(sn)	besteck					- cutlery
+(sn)	kaffeetasse				- coffee pot
+(sn)	haferl					- mug
+(sn)	abwasch					- washing up
+
+*Lebenswelt
+(sn)	heimat				- hometown
+(sn)	erster monat		- first month
+(ph)	du in einem wort	- you in one word
+(sn)	extrovertiert		- extroverted
+(vb)	entschieden			- decided
+(vb)	beschlossen			- decided
+(vb)	verleibt			- incorporated
+(sn)	auflösung			- resolution
+(pr)	bereits				- already
+(ad)	äußerst				- extremely
+(pr)	eigentlich			- actually
+(sn)	junge				- boy
+(sn)	bub					- boy
+(pr)	zumindest			- at least
+(sn)	tumult				- chaos
+(ad)	idyllisch			- idyllic
+(pl)	maße				- dimensions
+(sn)	kunst				- art
+(pl)	seiten				- sides
+(sn)	betrieb				- operation
+(vb)	quellen				- sources
+(sn)	gefuhl				- feeling
+(pl)	werke				- factories
+(sn)	außen				- outside
+
+*Wer kann einen Satz bilden?
+(sn)	frühling	- spring
+(sn)	mitternacht	- midnight
+#Am fritag+abend
+
+*mode und stil
+(sn)	mode	- fashion
+(sn)	stil	- style
+(sn)	markenkleidung	- branded clothing
+(sn)	massenkleidung	- mass clothing
+(pr)	weil	- because
+(sn)	kleidung	- clothing
+(sn)	quantität	- quantity
+(ad)	hochwertig	- high-quality
+(sn)	rock		- skirt
+(ad)	schick		- chic
+(ad)	leger		- casual
+(ad)	lässige		- casual
+(ad)	rockig		- rocky
+(sn)	daunenjacke	- down jacket
+(vb)	ziehe		- pull
+(sn)	pullover	- pullover
+(pl)	kleider		- dresses
+(sn)	strickmütze	- knit hat
+(sn)	strickschal	- knit scarf
+(sn)	gürtel		- belt
+(sn)	haube		- hood
+(pl)	handschuhe	- gloves
+(pl)	schnürstiefelette	- lace-up ankle boots
+(av)	schüren				- stir up
+(sn)	setze				- set
+(vb)	anziehen			- put on
+(sn)	schminken			- makeup
+(ad)	festlich			- festive

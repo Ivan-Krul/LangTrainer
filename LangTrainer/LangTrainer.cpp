@@ -62,6 +62,48 @@ std::vector<std::string> extractColomnsFromRow(std::string row) {
 	return colomns;
 }
 
+void updateMatrixSizeLev(std::vector<std::vector<size_t>>& matrix, size_t& width, size_t& height, const size_t origSize, const size_t checkSize) {
+	size_t i = 0;
+	if (width < origSize) { // width module
+		size_t prevWidth = width;
+		width = origSize;
+		matrix.resize(width + 1);
+		for (i = 0; i < width + 1; i++) { // fill by height
+			if (matrix[i].size() <= height)
+				matrix[i].resize(height + 1);
+			matrix[i].front() = i;
+		}
+	}
+	if (height < checkSize) { // height module
+		height = checkSize;
+		for (i = 0; i < width + 1; i++) // fill by width
+			matrix[i].resize(height + 1);
+		for (i = 0; i < height + 1; i++)
+			matrix.front()[i] = i;
+	}
+}
+
+// Wagner–Fischer algorithm
+size_t countErrorsInStringLev(const std::string& orig, const std::string& check) {
+	// all static to not spend time on pushing temporary variables in stack and then poping, dynamic programming anyway
+	static std::vector<std::vector<size_t>> matrix;
+	static size_t width = 0;
+	static size_t height = 0;
+	static size_t x;
+	static size_t y;
+	static bool subst;
+
+	updateMatrixSizeLev(matrix, width, height, orig.size(), check.size());
+
+	for (x = 0; x < orig.size(); x++) {
+		for (y = 0; y < check.size(); y++) {
+			subst = orig[x] != check[y];
+			matrix[x + 1][y + 1] = std::min(matrix[x][y + 1]+1, std::min(matrix[x + 1][y]+1, matrix[x][y] + subst));
+		}
+	}
+	return matrix[x][y];
+}
+
 size_t countErrorsInString(const std::string& orig, const std::string& check) {
 	size_t count = abs((signed)orig.size() - (signed)check.size());
 	for (size_t i = 0; i < std::min(orig.size(), check.size()); i++) {
@@ -104,10 +146,12 @@ std::vector<dictWord> extractAllWords(const std::string& filename) {
 const dictWord& findAtLeastErrorsMean(const std::vector<dictWord>& words, const std::string& input) {
 	size_t indexRecord = -1;
 	size_t itselfRecord = -1;
+	size_t lev = 0;
 
 	for (size_t i = 0; i < words.size(); i++) {
-		if (itselfRecord > countErrorsInString(words[i].mean, input)) {
-			itselfRecord = countErrorsInString(words[i].mean, input);
+		lev = countErrorsInStringLev(words[i].mean, input);
+		if (itselfRecord > lev) {
+			itselfRecord = lev;
 			indexRecord = i;
 		}
 	}
@@ -117,17 +161,17 @@ const dictWord& findAtLeastErrorsMean(const std::vector<dictWord>& words, const 
 
 void testWordMean(const std::vector<dictWord>& words, size_t checkIndex, const std::string input) {
 	auto& instCheck = words[checkIndex];
-	size_t errors = countErrorsInString(instCheck.mean, input);
+	size_t errors = countErrorsInStringLev(instCheck.mean, input);
 	if (errors == 0) {
 		std::cout << "Absolutely correct!\n";
 	} else {
 		auto instCorrect = findAtLeastErrorsMean(words, input);
-		if (countErrorsInString(instCorrect.mean, input) == 0 && instCorrect.word == instCheck.word)
+		if (countErrorsInStringLev(instCorrect.mean, input) == 0 && instCorrect.word == instCheck.word)
 			std::cout << "Hold on, did you mean " << std::quoted(instCorrect.mean) << '.';
 		else if (errors == 1)
 			std::cout << "Correct, but typo.";
 		else {
-			if ((float)(instCheck.mean.size() - errors) / (float)instCheck.mean.size() > 0.5f)
+			if ((float)(instCheck.mean.size() - errors) / (float)instCheck.mean.size() > 0.75f)
 				std::cout << "Ehh... Decent.";
 			else
 				std::cout << "Too bad.";
