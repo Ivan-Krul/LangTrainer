@@ -159,22 +159,31 @@ const dictWord& findAtLeastErrorsMean(const std::vector<dictWord>& words, const 
 	return words[indexRecord];
 }
 
-void testWordMean(const std::vector<dictWord>& words, size_t checkIndex, const std::string input) {
+void testWordMean(const std::vector<dictWord>& words, size_t checkIndex, const std::string input, int& score) {
 	auto& instCheck = words[checkIndex];
 	size_t errors = countErrorsInStringLev(instCheck.mean, input);
 	if (errors == 0) {
 		std::cout << "Absolutely correct!\n";
+		score += 100;
 	} else {
 		auto instCorrect = findAtLeastErrorsMean(words, input);
-		if (countErrorsInStringLev(instCorrect.mean, input) == 0 && instCorrect.word == instCheck.word)
+		if (countErrorsInStringLev(instCorrect.mean, input) == 0 && instCorrect.word == instCheck.word) {
 			std::cout << "Hold on, did you mean " << std::quoted(instCorrect.mean) << '.';
-		else if (errors == 1)
+			score += 90;
+		}
+		else if (errors == 1) {
 			std::cout << "Correct, but typo.";
+			score += 70;
+		}
 		else {
-			if ((float)(instCheck.mean.size() - errors) / (float)instCheck.mean.size() > 0.75f)
+			if ((float)(instCheck.mean.size() - errors) / (float)instCheck.mean.size() > 0.75f) {
 				std::cout << "Ehh... Decent.";
-			else
+				score += 25 * (float)(abs((signed)(instCheck.mean.size() - errors))) / (float)instCheck.mean.size();
+			}
+			else {
 				std::cout << "Too bad.";
+				score -= 75 - 75 * (float)(abs((signed)(instCheck.mean.size() - errors))) / (float)instCheck.mean.size();
+			}
 			std::cout << " Also can be " << std::quoted(instCorrect.word) << ", what translates as " << std::quoted(instCorrect.mean) << " as " << instCorrect.type << " in section " << std::quoted(instCorrect.section) << '.';
 		}
 		std::cout << " Actual meaning is " << std::quoted(instCheck.mean) << '\n';
@@ -195,8 +204,14 @@ int main() {
 	srand(time(NULL));
 	auto list = extractAllWords("dictionary.txt");
 	auto rnd = rand();
-	while(true) {
+	int score = 0;
+	std::string input;
+
+	while(!ispunct(input[0])) {
 		rnd = rand() % list.size();
-		testWordMean(list, rnd, preInputMean(list, rnd));
+		input = preInputMean(list, rnd);
+		testWordMean(list, rnd, input, score);
+		std::cout << "You have: " << score << " scores\n";
 	}
+	std::cout << "Session ended\n";
 }
