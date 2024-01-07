@@ -205,9 +205,9 @@ int main() {
 	auto list = extractAllWords("dictionary.txt");
 	auto rnd = rand();
 	int score = 0;
-	std::string input;
+	std::string input = "a";
 
-	while(!ispunct(input[0])) {
+	while(input[0] != 126) {
 		rnd = rand() % list.size();
 		input = preInputMean(list, rnd);
 		testWordMean(list, rnd, input, score);
